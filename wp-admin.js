@@ -33,6 +33,15 @@ jQuery( document ).on( 'ready' , function(){
         if( jQuery( this ).attr( 'data-id' ) == 'bvg_team_clt' ){
             jQuery( this ).addClass( 'widget_icon_bvg_team_clt' );
         }
+        if( jQuery( this ).attr( 'data-id' ) == 'bvg_nuliga_calendar' ){
+            jQuery( this ).addClass( 'widget_icon_bvg_nuliga_calendar' );
+        }
+        if( jQuery( this ).attr( 'data-id' ) == 'bvg_nuliga_team_calendar' ){
+            jQuery( this ).addClass( 'widget_icon_bvg_nuliga_team_calendar' );
+        }
+        if( jQuery( this ).attr( 'data-id' ) == 'bvg_nuliga_team_table' ){
+            jQuery( this ).addClass( 'widget_icon_bvg_nuliga_team_table' );
+        }
     });
 
     // Not eidtable widgets...
