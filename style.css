@@ -1,0 +1,445 @@
+/*
+ Theme Name:   BVG
+ Theme URI:    http://lignoplan.com/wordpress_9
+ Description:  Vantage Child Theme für den BVG Verein
+ Author:       Laurent Dorier
+ Author URI:   http://etalkers.org
+ Template:     vantage
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  vantage
+*/
+
+/*
+Doc child theme
+https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
+*/
+
+
+
+
+/* Backend */
+fieldset{
+    margin-bottom: 25px;
+}
+input[type="radio"]{
+    float: left;
+}
+#bvgco_submit{
+    
+}
+.hide{
+    display: none;
+}
+
+.btn_copy{
+    font-weight: bold;
+}
+#results{
+    margin-top: 15px;
+    border: 0;
+    display: none;
+}
+#results_html{
+    margin-top: 15px;
+    padding: 4px;
+    overflow: auto;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+}
+#startpage{
+    margin-top: 15px;
+}
+
+/* Frontend */
+/* Override Vantage theme */
+/* Header */
+#masthead {
+    background: linear-gradient( to right , #fff, #343538) !important;
+}
+#masthead .hgroup{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#masthead .hgroup .support-text {
+    padding: 8px !important;
+    box-shadow: 4px 4px 4px #343538 !important;
+
+    background: linear-gradient( to right , #fff, #ccc) !important;
+
+    border-right: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+    border-radius: 8px !important;
+
+    font-size: 125% !important;
+}
+#main-slider {
+    background: linear-gradient( to right , #000 , #fff) !important;
+}
+
+/* Main menu */
+
+.main-navigation{
+    background: linear-gradient(to top, #0f4e93, #007cc2) !important;
+}
+.main-navigation ul li{
+    white-space: nowrap;
+}
+.main-navigation ul.menu{
+    margin-top: 9px;
+    padding-top: 9px;
+    height: 34px !important;
+}
+.main-navigation > div.full-container{
+    margin-top: -9px;
+}
+/*
+.main-navigation ul.menu{
+    display: table !important;
+    list-style: initial !important;
+    height: 38px !important;
+}
+.main-navigation ul li ul.sub-menu{
+    display: none !important;
+}
+.main-navigation ul li:hover ul.sub-menu{
+    display: block !important;
+}
+*/
+.main-navigation ul.menu > li{
+    display: table-cell !important;
+    vertical-align: middle !important;
+    //height: 26px;
+    margin-top: 20px;
+}
+.main-navigation a{
+    text-shadow: 2px 2px 2px #000;
+}
+.main-navigation ul.menu > li > a{
+    margin-left: 2px !important;
+    margin-right: 10px !important;
+    padding-left: 40px !important;
+    padding-bottom: 17px !important;
+    padding-top: 11px !important;
+    display: inline !important;
+}
+.main-navigation ul.menu > li:hover > a, .ui-accordion .ui-accordion-header{
+    background: linear-gradient(to bottom, #0f4e93, #007cc2) !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+.main-navigation > div > div > ul > li > a:before {
+    position: absolute !important;
+    left: 0 !important;
+    content: '' !important;
+    display: inline !important;
+    padding-top: 3px !important;
+    background: url('images/button_ball.png') no-repeat 0 0 !important;
+    height: 35px !important;
+    padding-bottom: 20px !important;
+    width: 35px !important;
+    padding-right: 10px !important;
+    margin-right: 5px !important;
+}
+.main-navigation ul li a:hover:before { animation: rotatebg 1s; }
+@keyframes rotatebg {
+    to { transform: rotate(35deg); zoom: 0.6; }
+}
+
+.main-navigation ul.menu > li > ul.sub-menu{
+    margin-top: 12px;
+}
+.main-navigation ul.sub-menu{
+    margin-left: 2px;
+}
+.main-navigation ul.sub-menu ul.sub-menu{
+    margin-left: 0;
+}
+
+.main-navigation ul.sub-menu li:hover > a {
+    background: none;
+}
+.main-navigation ul > li:hover ul.sub-menu li, .main-navigation ul.sub-menu li {
+    display: inline-block !important;
+    float: left;
+    vertical-align: middle !important;
+    height: 37px;
+    border-bottom: 1px solid #fff;
+}
+.main-navigation ul.sub-menu a {
+    width: 220px;
+    padding: 12px 20px;
+}
+.main-navigation ul.sub-menu > li > a{
+    background: linear-gradient(to bottom, #0f4e93, #007cc2) !important;
+    color: #fff !important;
+}
+.main-navigation ul.sub-menu > li:hover > a{
+    background: linear-gradient(to bottom, #007cc2, #0f4e93) !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+
+
+
+/*
+article.post, article.page{
+    margin-bottom: 20px !important;
+    padding-bottom: 10px !important;
+}
+*/
+
+
+/* Global */
+.bvg_block {
+	/*
+    border: 3px solid #ddd;
+	border-radius: 16px;
+	padding-right: 24px;
+	padding-left: 24px;
+    */
+	margin-bottom: 24px;
+}
+.bvg_block h1 {
+	font-size: 1.7em;
+}
+.bvg_block h1 a {
+	font-size: 100%;
+}
+.bvg_block h2 {
+	font-size: 1.4em;
+}
+.bvg_block h3 {
+	font-size: 1.2em;
+}
+.hide{
+    display: none;
+}
+.link_beschreibung{
+    margin-left: 15px;
+}
+.checkbox_margin{
+    margin: 0 6px 0 0 !important !important;
+}
+
+
+
+/* Vorstand / Kontakt Seite */
+.person_block {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 25px;
+	clear: left;
+	height: 230px;
+}
+.person_block_last {
+	margin-bottom: 25px;
+	clear: left;
+	height: 230px;
+}
+.person_photo {
+	float: left;
+	margin-right: 36px;
+}
+.person_block ul, ul.no_bullet {
+	list-style: none;
+}
+.person_tel img {
+	vertical-align: bottom;
+}
+
+
+/* Score */
+table.score, table.spieler_score{
+    max-width: 1080px !important;
+    width: 100% !important;
+    border-bottom: 0 !important;
+    border-collapse: initial !important;
+}
+table.score table, table.spieler_score table{
+    margin: 0;
+    margin-bottom: -1px;
+}
+table.score table td, table.spieler_score table td{
+    text-align: center;
+}
+table.score td.club1, table.spieler_score td.club1{
+    width: 30% !important;
+    padding-right: 5px !important;
+    max-width: 250px !important;
+    text-align: right !important;
+    font-weight: bold !important;
+
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    border-left: 1px solid #ddd !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+table.score td.score{
+    min-width: 60px !important;
+    max-width: 100% !important;
+    padding: 0 5px 0 5px !important;
+    text-align: center !important;
+
+    background-color: #ddd !important;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+}
+table.spieler_score td.score{
+    min-width: 60px !important;
+    max-width: 100% !important;
+    
+    background-color: #ddd !important;
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;    
+}
+table.score td.club2, table.spieler_score td.club2{
+    width: 30% !important;
+    padding-left: 5px !important;
+    max-width: 250px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+table.score td.bericht{
+    text-align: left !important;
+    width: 100% !important;
+    max-width: 1080px !important;
+    display: table-cell !important !important;
+}
+
+
+/* Mannschaft Seiten */
+#mannschaft_berichte{
+    max-height: 600px;
+    /*overflow-y: auto;*/
+}
+#mannschaft_tabelle .ruler caption {
+	font-size: 140%;
+	font-weight: bold;
+}
+#mannschaft_tabelle .bvg td {
+	background-color: #ddd;
+}
+#mannschaft_tabelle .bvg:hover {
+	background-color: #343538;
+}
+#mannschaft_tabelle .bvg:hover td {
+	background-color: transparent;
+	color: #fff;
+}
+.bvg_stamm {
+    font-weight: bold;
+}
+.bvg_stamm:after {
+    content: " Stammpieler(in)";
+}
+
+
+
+
+/* Categorie Items */
+div.cat-post-widget ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.entry-content ul li.cat-post-item {
+	margin-left: 0;
+	zoom: 1;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #eeeeee;
+}
+li.cat-post-item a.post-title {
+	display: block;
+	text-decoration: none;
+	color: #3b3b3b;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.35em;
+}
+p.cat-post-date, p.cat-post-author {
+	display: inline;
+	color: #8f8f8f;
+	font-size: 12px;
+}
+p.cat-post-date a, p.cat-post-author a {
+	font-weight: 500;
+	color: #5e5e5e;
+	text-decoration: none;
+	font-style: none;
+}
+
+
+/* Tabs */
+div#tabs{
+    border: 0 !important;
+}
+div#tabs > ul{
+    border: 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    /*background: linear-gradient(to top, #0f4e93, #007cc2) !important;*/
+    background: #fff !important;
+    border-top: 3px solid #ddd !important;
+    border-left: 3px solid #ddd !important;
+    border-right: 3px solid #ddd !important;
+    border-radius: 16px !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+div#tabs > ul li, div#tabs > ul li a{
+    border-top: 1px solid #000 !important;
+    border-right: 1px solid #000 !important;
+    border-left: 1px solid #000 !important;
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    color: #fff !important;
+}
+div#tabs > ul li.ui-state-default{
+    background: linear-gradient(to top, #007cc2, #0f4e93) !important;
+}
+div#tabs > ul li.ui-tabs-active, div#tabs > ul li.ui-tabs-active a{
+    background: #fff !important;
+    color: #000 !important;
+}
+div#tabs div.widget{
+    border-top: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+
+/* Download Types */
+.dl_doc:before, .dl_pdf:before, .dl_xls:before{
+    content: ' ';
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    margin-bottom: -15px;
+    margin-top: 15px;
+}
+.dl_doc, .dl_pdf, .dl_xls{
+    font-weight: bold;
+    text-decoration: initial;
+}
+.dl_doc:before{
+    background-image: url('images/dl_file_pdf.png');
+}
+.dl_pdf:before{
+    background-image: url('images/dl_file_pdf.png');
+}
+.dl_xls:before{
+    background-image: url('images/dl_file_xls.png');
+}
+
