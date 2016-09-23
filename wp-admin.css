@@ -1,0 +1,99 @@
+/*
+ Theme Name:   BVG
+ Theme URI:    http://lignoplan.com/wordpress_9
+ Description:  Vantage Child Theme für den BVG Verein
+ Author:       Laurent Dorier
+ Author URI:   http://etalkers.org
+ Template:     vantage
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  vantage
+*/
+
+/*
+Doc child theme
+https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
+
+File called from the bvg_widgets plugin:
+
+// GET STYLE AND SCRIPT ROM THEME BVG
+// Include CSS File for the admin
+function bvg_admin_theme_style() {
+wp_enqueue_style('my-admin-theme', get_template_directory_uri() . '/../bvg/wp-admin.css');
+}
+add_action('admin_enqueue_scripts', 'bvg_admin_theme_style');
+
+function bvg_admin_theme_script(){
+wp_enqueue_script('my-admin-theme', get_template_directory_uri() . '/../bvg/wp-admin.js', array( 'jquery' ) );
+}
+add_action('admin_enqueue_scripts', 'bvg_admin_theme_script');
+
+*/
+
+
+
+/* Backend */
+
+fieldset{
+    margin-bottom: 25px;
+}
+input[type="radio"]{
+    float: left;
+}
+#bvgco_submit{
+    
+}
+.hide{
+    display: none;
+}
+
+.btn_copy{
+    font-weight: bold;
+}
+#results{
+    margin-top: 15px;
+    border: 0;
+    display: none;
+}
+#results_html{
+    margin-top: 15px;
+    padding: 4px;
+    overflow: auto;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+}
+#startpage{
+    margin-top: 15px;
+}
+
+/* Widgets */
+.so-widget-icon-bvgblock, .so-widget-icon-bvgteamclt, .so-widget-icon-calendar{
+    background-image: url('images/ico_bvg.png') !important;
+    background-size: 17px 20px !important;
+    background-repeat: no-repeat !important;
+}
+.widget_icon_bvg_block svg, .widget_icon_bvg_team_clt svg, .widget_icon_bvg_calender svg{
+    display: none;
+}
+.widget_icon_bvg_block{
+    background: url( 'images/ico_bvg_bvgblock.png' ) !important;
+}
+.widget_icon_bvg_team_clt{
+    background: url( 'images/ico_bvg_bvgclt.png' ) !important;
+}
+.widget_icon_bvg_calender{
+    background: url( 'images/ico_bvg_bvgcalendar.png' ) !important;
+}
+.widget_icon_bvg_block, .widget_icon_bvg_team_clt, .widget_icon_bvg_calender{
+    background-color: #fff !important;
+    background-repeat: no-repeat !important;
+    background-position: 20px 20px !important;
+}
+.not_editable{
+    border: 2px solid #c00 !important;
+}
+
+
+

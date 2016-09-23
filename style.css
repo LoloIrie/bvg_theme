@@ -19,40 +19,6 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
 
 
 
-
-/* Backend */
-fieldset{
-    margin-bottom: 25px;
-}
-input[type="radio"]{
-    float: left;
-}
-#bvgco_submit{
-    
-}
-.hide{
-    display: none;
-}
-
-.btn_copy{
-    font-weight: bold;
-}
-#results{
-    margin-top: 15px;
-    border: 0;
-    display: none;
-}
-#results_html{
-    margin-top: 15px;
-    padding: 4px;
-    overflow: auto;
-    border: 2px solid #ccc;
-    border-radius: 16px;
-}
-#startpage{
-    margin-top: 15px;
-}
-
 /* Frontend */
 /* Override Vantage theme */
 /* Header */
@@ -223,7 +189,7 @@ article.post, article.page{
     margin-left: 15px;
 }
 .checkbox_margin{
-    margin: 0 6px 0 0 !important !important;
+    margin: 0 6px 0 0 !important;
 }
 
 
@@ -314,7 +280,7 @@ table.score td.bericht{
     text-align: left !important;
     width: 100% !important;
     max-width: 1080px !important;
-    display: table-cell !important !important;
+    display: table-cell !important;
 }
 
 
@@ -377,7 +343,7 @@ p.cat-post-date a, p.cat-post-author a {
 	font-weight: 500;
 	color: #5e5e5e;
 	text-decoration: none;
-	font-style: none;
+	font-style: normal;
 }
 
 
