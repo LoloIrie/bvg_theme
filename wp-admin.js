@@ -27,8 +27,8 @@ jQuery( document ).on( 'ready' , function(){
         if( jQuery( this ).attr( 'data-id' ) == 'bvg_block' ){
             jQuery( this ).addClass( 'widget_icon_bvg_block' );
         }
-        if( jQuery( this ).attr( 'data-id' ) == 'bvg_calender' ){
-            jQuery( this ).addClass( 'widget_icon_bvg_calender' );
+        if( jQuery( this ).attr( 'data-id' ) == 'bvg_calendar' ){
+            jQuery( this ).addClass( 'widget_icon_bvg_calendar' );
         }
         if( jQuery( this ).attr( 'data-id' ) == 'bvg_team_clt' ){
             jQuery( this ).addClass( 'widget_icon_bvg_team_clt' );

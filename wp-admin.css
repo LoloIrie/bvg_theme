@@ -74,7 +74,7 @@ input[type="radio"]{
     background-size: 17px 20px !important;
     background-repeat: no-repeat !important;
 }
-.widget_icon_bvg_block svg, .widget_icon_bvg_team_clt svg, .widget_icon_bvg_calender svg, .widget_icon_bvg_nuliga_calendar svg, .widget_icon_bvg_nuliga_team_calendar svg, .widget_icon_bvg_nuliga_team_table svg{
+.widget_icon_bvg_block svg, .widget_icon_bvg_team_clt svg, .widget_icon_bvg_calendar svg, .widget_icon_bvg_nuliga_calendar svg, .widget_icon_bvg_nuliga_team_calendar svg, .widget_icon_bvg_nuliga_team_table svg{
     display: none;
 }
 .widget_icon_bvg_block{
@@ -83,7 +83,7 @@ input[type="radio"]{
 .widget_icon_bvg_team_clt{
     background: url( 'images/ico_bvg_bvgclt.png' ) !important;
 }
-.widget_icon_bvg_calender{
+.widget_icon_bvg_calendar{
     background: url( 'images/ico_bvg_bvgcalendar.png' ) !important;
 }
 .widget_icon_bvg_nuliga_calendar{
@@ -95,10 +95,13 @@ input[type="radio"]{
 .widget_icon_bvg_nuliga_team_table{
     background: url( 'images/ico_bvg_nuligateamtable.png' ) !important;
 }
-.widget_icon_bvg_block, .widget_icon_bvg_team_clt, .widget_icon_bvg_calender, .widget_icon_bvg_nuliga_calendar, .widget_icon_bvg_nuliga_team_calendar, .widget_icon_bvg_nuliga_team_table{
+.widget_icon_bvg_block, .widget_icon_bvg_team_clt, .widget_icon_bvg_calendar, .widget_icon_bvg_nuliga_calendar, .widget_icon_bvg_nuliga_team_calendar, .widget_icon_bvg_nuliga_team_table{
     background-color: #fff !important;
     background-repeat: no-repeat !important;
     background-position: 20px 20px !important;
+}
+.so-widget-is-inactive.widget_icon_bvg_block, .so-widget-is-inactive.widget_icon_bvg_team_clt, .so-widget-is-inactive.widget_icon_bvg_calendar, .so-widget-is-inactive.widget_icon_bvg_nuliga_calendar, .so-widget-is-inactive.widget_icon_bvg_nuliga_team_calendar, .so-widget-is-inactive.widget_icon_bvg_nuliga_team_table{
+    filter: grayscale(100%);
 }
 .not_editable{
     border: 2px solid #c00 !important;

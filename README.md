@@ -7,3 +7,8 @@
 
 BVG Theme (bvg_theme)
 WordPress Theme for the BVG Site by Laurent Dorier
+
+*** V 1.0 ***
+
+Initial release
+SiteOrigin Vantage Child theme

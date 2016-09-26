@@ -170,6 +170,26 @@ article.post, article.page{
     */
 	margin-bottom: 24px;
 }
+.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar {
+    border: 3px solid #ddd !important;
+    border-radius: 16px !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    margin-bottom: 24px !important;
+}
+.widget_category-posts {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.widget-area .bvg_block {
+    border: 1px solid #ddd !important;
+    padding: 4px 4px 4px 4px !important;
+}
+.widget_recent-posts > ul > li{
+    margin-bottom: 40px !important;
+    padding-bottom: 40px !important;
+}
 .bvg_block h1 {
 	font-size: 1.7em;
 }
@@ -191,7 +211,10 @@ article.post, article.page{
 .checkbox_margin{
     margin: 0 6px 0 0 !important;
 }
-
+.pseudo_link{
+    cursor: pointer;
+    color: #248cc8 !important;
+}
 
 
 /* Vorstand / Kontakt Seite */
