@@ -170,12 +170,23 @@ article.post, article.page{
     */
 	margin-bottom: 24px;
 }
-.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar {
+.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop {
     border: 3px solid #ddd !important;
     border-radius: 16px !important;
     padding-right: 24px !important;
     padding-left: 24px !important;
     margin-bottom: 24px !important;
+}
+.widget_siteorigin-panels-postloop{
+    padding-top: 10px !important;
+}
+.widget_siteorigin-panels-postloop .widget-title{
+    display: none;
+}
+.widget_siteorigin-panels-postloop h1, .widget_siteorigin-panels-postloop h2, .widget_siteorigin-panels-postloop h3, .widget_siteorigin-panels-postloop h4, .widget_siteorigin-panels-postloop h5, .widget_siteorigin-panels-postloop h6{
+    color: #444444 !important;
+    margin: 1em 0 !important;
+    font-weight: 500 !important;
 }
 .widget_category-posts {
     max-height: 500px;
