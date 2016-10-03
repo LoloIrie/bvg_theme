@@ -39,9 +39,11 @@ add_action('admin_enqueue_scripts', 'bvg_admin_theme_script');
 fieldset{
     margin-bottom: 25px;
 }
+/*
 input[type="radio"]{
     float: left;
 }
+*/
 #bvgco_submit{
     
 }
