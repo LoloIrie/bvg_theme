@@ -194,7 +194,7 @@ article.post, article.page{
     overflow-x: hidden;
 }
 .widget_bvg-nuligaallteamscalendar{
-    max-height: 250px;
+    max-height: 400px;
 }
 .widget-area .bvg_block {
     border: 1px solid #ddd !important;
@@ -228,6 +228,10 @@ article.post, article.page{
 .pseudo_link{
     cursor: pointer;
     color: #248cc8 !important;
+}
+.h3float{
+    float: left !important;
+    margin-right: 10px !important;
 }
 
 
