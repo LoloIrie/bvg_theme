@@ -441,7 +441,7 @@ div#tabs div.widget{
     text-decoration: initial;
 }
 .dl_doc:before{
-    background-image: url('images/dl_file_pdf.png');
+    background-image: url('images/dl_file_doc.png');
 }
 .dl_pdf:before{
     background-image: url('images/dl_file_pdf.png');
@@ -450,3 +450,39 @@ div#tabs div.widget{
     background-image: url('images/dl_file_xls.png');
 }
 
+
+/* Ausschreibungen */
+.ausschreibung_item_title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 4px;
+
+    font-weight: bold;
+    font-size: 110%;
+    cursor: pointer;
+}
+.ausschreibung_item_content{
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.ausschreibung_label{
+    width: 120px;
+    display: inline-block;
+    padding: 4px 0 4px 4px;
+
+    background: linear-gradient(to bottom, #0f4e93, #007cc2) !important;
+
+    border-left: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    border-radius: 8px;
+
+    font-weight: bold;
+    color: #fff;
+}
+.ausschreibung_item_content p{
+    padding-left: 20px;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+}
