@@ -170,7 +170,7 @@ article.post, article.page{
     */
 	margin-bottom: 24px;
 }
-.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop {
+.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_rss {
     border: 3px solid #ddd !important;
     border-radius: 16px !important;
     padding-right: 24px !important;
@@ -203,6 +203,11 @@ article.post, article.page{
 .widget_recent-posts > ul > li{
     margin-bottom: 40px !important;
     padding-bottom: 40px !important;
+}
+.widget_rss ul{
+    height: 350px;
+    max-height: 450px;
+    overflow: auto;
 }
 .bvg_block h1 {
 	font-size: 1.7em;
@@ -485,4 +490,30 @@ div#tabs div.widget{
     padding-left: 20px;
     margin-top: 0.2em;
     margin-bottom: 0.4em;
+}
+
+/* RSS Page */
+#primary.fullwidth{
+    width: 100% !important;
+}
+.widget_rss .widget-title{
+    margin-top: 15px;
+}
+.widget_rss .rss-date, .widget_rss .rssSummary, .widget_rss cite{
+    display: none;
+}
+.ui-tooltip{
+    padding: 10px 20px !important;
+
+    //background-color: #000000 !important;
+
+    background: linear-gradient(to bottom, #0f4e93, #007cc2) !important;
+    color: #fff !important;
+
+    border-radius: 20px !important;
+    font: bold 14px "Helvetica Neue", Sans-Serif !important;
+    box-shadow: 0 0 7px black !important;
+}
+.tooltip_content{
+    font-weight: normal;
 }
