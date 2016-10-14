@@ -239,6 +239,43 @@ article.post, article.page{
     margin-right: 10px !important;
 }
 
+/* Sidebar */
+.widget-area aside h3{
+    cursor: pointer;
+}
+.widget-area aside h3:after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+
+    background: url( 'images/ico_slidedown.png' );
+    background-repeat: no-repeat;
+}
+.widget-area aside ul{
+    display: none;
+}
+.widget-area aside.widget_bvg-block  {
+    border: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.widget-area aside.widget_bvg-block > div > div > div > h1{
+    display: none;
+}
+.widget-area aside .bvg_block {
+    border: 0 !important;
+    padding: 0 !important;
+}
+.widget-area aside .bvg_block h3{
+    font-size: 15px;
+    color: #3b3b3b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
 /* Vorstand / Kontakt Seite */
 .person_block {
