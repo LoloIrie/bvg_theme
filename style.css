@@ -48,12 +48,9 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
     color: #fff !important;
 }
 
-body{
-    background: linear-gradient(to top, #2f3033, #0f4e93) !important;
-}
-
 /* Main menu */
-.main-navigation{
+
+body, .main-navigation{
     background: linear-gradient(to top, #0f4e93, #007cc2) !important;
 }
 .main-navigation ul li{
@@ -83,7 +80,7 @@ body{
 .main-navigation ul.menu > li{
     display: table-cell !important;
     vertical-align: middle !important;
-    //height: 26px;
+//height: 26px;
     margin-top: 20px;
 }
 .main-navigation a{
@@ -186,14 +183,14 @@ td.score{
 ::-webkit-scrollbar {
     display: none;
 }
-body.page-id-200 #primary{
+body.page-id-1877 #primary{
     width: 100% !important;
 }
-body.page-id-200 #secondary{
+body.page-id-1877 #secondary{
     display: none !important;
 }
 #main{
-    background: url(http://etalkers.org/wp-content/uploads/2017/01/fond_block1.jpg);
+    background: url(http://etalkers.org/wp-content/uploads/2017/02/fond_block1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -203,21 +200,21 @@ body.page-id-200 #secondary{
     overflow-y: auto;
 }
 .bvg_block {
-	/*
+    /*
     border: 3px solid #ddd;
-	border-radius: 16px;
-	padding-right: 24px;
-	padding-left: 24px;
+    border-radius: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
     */
-	margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 .widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_sow-post-carousel, .widget_vantage-social-media {
+    background: rgba(0,0,0,0.4);
     border: 3px solid #ddd !important;
     border-radius: 16px !important;
     padding-right: 24px !important;
     padding-left: 24px !important;
     margin-bottom: 24px !important;
-    background-color: rgba(0,0,0,0.50) !important;
 }
 .widget_siteorigin-panels-postloop{
     padding-top: 10px !important;
@@ -247,19 +244,19 @@ body.page-id-200 #secondary{
     padding-bottom: 40px !important;
 }
 .bvg_block h1, .bvg_home_panel_1 h1, .bvg_home_panel_1 h2, .bvg_home_panel_1 h3.widget-title {
-	color: #fff !important;
+    color: #fff !important;
     margin: 1em 0 !important;
     font-weight: 500 !important;
     font-size: 1.7em !important;
 }
 .bvg_block h1 a {
-	font-size: 100%;
+    font-size: 100%;
 }
 .bvg_block h2 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 .bvg_block h3 {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
 .hide{
     display: none;
@@ -270,9 +267,9 @@ body.page-id-200 #secondary{
 .checkbox_margin{
     margin: 0 6px 0 0 !important;
 }
-.pseudo_link, .entry-content h3.pseudo_link{
+.pseudo_link{
     cursor: pointer;
-    color: yellow !important;
+    color: #248cc8 !important;
 }
 .h3float{
     float: left !important;
@@ -282,25 +279,25 @@ body.page-id-200 #secondary{
 
 /* Vorstand / Kontakt Seite */
 .person_block {
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 25px;
-	clear: left;
-	height: 230px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+    clear: left;
+    height: 230px;
 }
 .person_block_last {
-	margin-bottom: 25px;
-	clear: left;
-	height: 230px;
+    margin-bottom: 25px;
+    clear: left;
+    height: 230px;
 }
 .person_photo {
-	float: left;
-	margin-right: 36px;
+    float: left;
+    margin-right: 36px;
 }
 .person_block ul, ul.no_bullet {
-	list-style: none;
+    list-style: none;
 }
 .person_tel img {
-	vertical-align: bottom;
+    vertical-align: bottom;
 }
 
 
@@ -344,10 +341,10 @@ table.score td.score{
 table.spieler_score td.score{
     min-width: 60px !important;
     max-width: 100% !important;
-    
+
     background-color: #ddd !important;
     border-top: 1px solid #ddd !important;
-    border-bottom: 1px solid #ddd !important;    
+    border-bottom: 1px solid #ddd !important;
 }
 table.score td.club2, table.spieler_score td.club2{
     width: 30% !important;
@@ -376,18 +373,18 @@ table.score td.bericht{
     /*overflow-y: auto;*/
 }
 #mannschaft_tabelle .ruler caption {
-	font-size: 140%;
-	font-weight: bold;
+    font-size: 140%;
+    font-weight: bold;
 }
 #mannschaft_tabelle .bvg td {
-	background-color: #ddd;
+    background-color: #ddd;
 }
 #mannschaft_tabelle .bvg:hover {
-	background-color: #343538;
+    background-color: #343538;
 }
 #mannschaft_tabelle .bvg:hover td {
-	background-color: transparent;
-	color: #fff;
+    background-color: transparent;
+    color: #fff;
 }
 .bvg_stamm {
     font-weight: bold;
@@ -401,35 +398,35 @@ table.score td.bericht{
 
 /* Categorie Items */
 div.cat-post-widget ul {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 .entry-content ul li.cat-post-item {
-	margin-left: 0;
-	zoom: 1;
-	margin-bottom: 40px;
-	padding-bottom: 40px;
-	border-bottom: 1px solid #eeeeee;
+    margin-left: 0;
+    zoom: 1;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eeeeee;
 }
 li.cat-post-item a.post-title {
-	display: block;
-	text-decoration: none;
-	color: #3b3b3b;
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1.35em;
+    display: block;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.35em;
 }
 p.cat-post-date, p.cat-post-author {
-	display: inline;
-	color: #8f8f8f;
-	font-size: 12px;
+    display: inline;
+    color: #8f8f8f;
+    font-size: 12px;
 }
 p.cat-post-date a, p.cat-post-author a {
-	font-weight: 500;
-	color: #5e5e5e;
-	text-decoration: none;
-	font-style: normal;
+    font-weight: 500;
+    color: #5e5e5e;
+    text-decoration: none;
+    font-style: normal;
 }
 
 
@@ -534,12 +531,30 @@ div#tabs div.widget{
 
 /* Temp ? */
 #teaser_button_header{
-	position: fixed;
-    top: 175px;
-    right: 25px;
-    border: 4px solid #000;
-    z-index: 100;
-    line-height: 0;
+    margin: auto;
+    width: 450px;
+    height: 80px;
+    max-height: 70px;
+    display: block;
+    margin-bottom: -50px;
+    margin-top: -10px;
+}
+#teaser_button_header img{
+    height: 100px;
+    
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+#teaser_button_header img:hover{
+    -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+    border-radius: 12px;
 }
 .bannerInBlock_homepage{
     float: right;
