@@ -46,6 +46,7 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
 }
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-content p, .entry-content > ul, .entry-content > ol, .entry-content > li, .entry-content > dl, .entry-content pre, .entry-content code, .entry-content blockquote{
     color: #fff !important;
+    text-shadow: 2px 2px 5px #007cc2;
 }
 
 /* Main menu */
@@ -172,10 +173,16 @@ article.post, article.page{
 
 
 /* Global */
+body{
+    font-size: 18px !important;
+}
 body, table, td, h1, h2, h3, h4, h5, h6,
 .entry-content, #secondary .widget .widget-title, #footer-widgets .widget .widget-title, #masthead-widgets .widget .widget-title,
 .sow-carousel-previous, .sow-carousel-next{
     color: #fff !important;
+}
+p {
+    letter-spacing: 0.05em;
 }
 td.score{
     color: #0f4e93 !important;
@@ -190,7 +197,7 @@ body.page-id-1877 #secondary{
     display: none !important;
 }
 #main{
-    background: url(http://etalkers.org/wp-content/uploads/2017/02/fond_block1.png);
+    background: url(images/fond_block1.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -248,15 +255,19 @@ body.page-id-1877 #secondary{
     margin: 1em 0 !important;
     font-weight: 500 !important;
     font-size: 1.7em !important;
+    text-shadow: 2px 2px 5px #007cc2;
 }
 .bvg_block h1 a {
     font-size: 100%;
+    text-shadow: 2px 2px 5px #007cc2;
 }
 .bvg_block h2 {
     font-size: 1.4em;
+    text-shadow: 2px 2px 5px #007cc2;
 }
 .bvg_block h3 {
     font-size: 1.2em;
+    text-shadow: 2px 2px 5px #007cc2;
 }
 .hide{
     display: none;
@@ -541,22 +552,29 @@ div#tabs div.widget{
 }
 #teaser_button_header img{
     height: 100px;
-    
+
     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 #teaser_button_header img:hover{
     -webkit-transform: rotate(-10deg);
-     -moz-transform: rotate(-10deg);
-       -o-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
     border-radius: 12px;
 }
 .bannerInBlock_homepage{
     float: right;
-    margin-top: -115px;
+    margin-top: -216px;
+}
+.sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a{
+    background-image: url(images/news_default.jpg);
+}
+.bvg_home_panel_1 h3 {
+    display: flex;
+    text-shadow: 2px 2px 5px #007cc2;
 }
