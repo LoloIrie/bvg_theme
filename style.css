@@ -5,7 +5,7 @@
  Author:       Laurent Dorier
  Author URI:   http://etalkers.org
  Template:     vantage
- Version:      1.0.1
+ Version:      1.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -156,9 +156,9 @@ body, .main-navigation{
 
 /* News Slider */
 .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item {
-    border: 2px solid #000 !important;
+    border: 2px solid #0f4e93 !important;
     border-radius: 8px !important;
-    min-height: 220px !important;
+    min-height: 240px !important;
 }
 .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item h3 a, a {
     color: yellow !important;
