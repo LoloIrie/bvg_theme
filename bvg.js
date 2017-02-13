@@ -22,13 +22,17 @@ console.log( 'JS File for BVG ok' );
 
 jQuery( document ).on( 'ready' , function(){
     console.log( 'Los...' );
+
     // Sidebar Slidedown effect
     jQuery( '.widget-area aside h3' ).on( 'mouseover click' , function(){
         if( jQuery( this ).next().css( 'display' ) === 'none' ){
             jQuery( '.widget-area aside ul' ).slideUp();
             jQuery( this ).next().slideDown();
         }
-
     });
 
+    // Add link to Blog on the startpage
+    jQuery( '.sow-carousel-title h3').on( 'click' , function(){
+        document.location = '/blog';
+    });
 });
