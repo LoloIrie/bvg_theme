@@ -35,8 +35,8 @@ add_action('admin_enqueue_scripts', 'bvg_admin_theme_script');
 
 
 /* Backend */
-.siteorigin-widget-form .siteorigin-widget-field{
-    max-width: 250px;
+.widget-content .siteorigin-widget-field{
+    max-width: 400px;
 }
 .widget.open{
     margin-left: 0 !important;
