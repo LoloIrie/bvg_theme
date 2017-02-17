@@ -42,11 +42,12 @@ get_header();
 		jQuery( '.widget_rss a' ).attr( 'target' , '_blank' );
 
 		/* Preview news */
-		jQuery( '.widget_rss a' ).each( function(){
+		jQuery( '.widget_rss ul a' ).each( function(){
 
 			tooltip = '';
 			contentRss = jQuery( this ).parent().find( '.rssSummary' ).html();
 			if( contentRss != '' ){
+                //console.log( contentRss );
 				dateRss = jQuery( this ).parent().find( '.rss-date' ).html();
 				authorRss = jQuery( this ).parent().find( 'cite' ).text();
 

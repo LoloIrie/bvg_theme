@@ -35,4 +35,11 @@ jQuery( document ).on( 'ready' , function(){
     jQuery( '.sow-carousel-title h3').on( 'click' , function(){
         document.location = 'http://lignoplan.com/wordpress_9/blog';
     });
+
+    // Resize main container for the background picture if required
+    jQuery( document ).ready(function() {
+        if( jQuery( '#main' ).width() > 800 && jQuery( '#main' ).height() < 1200 ){
+            jQuery( '#main' ).height( 1200 );
+        }
+    });
 });

@@ -201,11 +201,8 @@ td.score{
 ::-webkit-scrollbar {
     display: none;
 }
-body.page-id-1877 #primary{
-    width: 100% !important;
-}
-body.page-id-1877 #secondary{
-    display: none !important;
+.page-template-default #primary, #primary{
+    width: auto !important;
 }
 #main{
     background: url(images/fond_block1.png);
@@ -226,7 +223,7 @@ body.page-id-1877 #secondary{
     */
     margin-bottom: 24px;
 }
-.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_sow-post-carousel, .widget_vantage-social-media {
+.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_sow-post-carousel, .widget_vantage-social-media, .widget_rss {
     background: rgba(0,0,0,0.4);
     border: 3px solid #007cc2 !important;
     border-radius: 16px !important;
@@ -596,4 +593,12 @@ div#tabs div.widget{
 .bvg_home_panel_1 h3 {
     display: flex;
     text-shadow: 2px 2px 5px #007cc2;
+}
+
+/* RSS */
+.rssSummary{
+    display: none;
+}
+.rss-date{
+    font-size: 80%;
 }
