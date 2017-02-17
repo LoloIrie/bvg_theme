@@ -33,6 +33,6 @@ jQuery( document ).on( 'ready' , function(){
 
     // Add link to Blog on the startpage
     jQuery( '.sow-carousel-title h3').on( 'click' , function(){
-        document.location = '/blog';
+        document.location = 'http://lignoplan.com/wordpress_9/blog';
     });
 });
