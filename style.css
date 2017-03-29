@@ -202,6 +202,9 @@ td.score{
     display: none;
 }
 .page-template-default #primary, #primary{
+    /*width: auto !important;*/
+}
+#primary.fullwidth{
     width: auto !important;
 }
 #main{
@@ -548,6 +551,18 @@ div#tabs div.widget{
     padding-left: 20px;
     margin-top: 0.2em;
     margin-bottom: 0.4em;
+}
+
+/* Palmares */
+table.table_palmares{
+    width: 100%;
+    margin-bottom: 32px;
+}
+table.table_palmares td.icons_column{
+    width: 32px;
+}
+table.table_palmares td.icons_column img{
+    height: 24px;
 }
 
 /* Temp ? */
