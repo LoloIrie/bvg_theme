@@ -325,15 +325,17 @@ footer .widget_bvg-block{
 
 /* Vorstand / Kontakt Seite */
 .person_block {
+    display: inline-block;
     border-bottom: 1px solid #ddd;
     margin-bottom: 25px;
     clear: left;
-    height: 230px;
+    height: 100%;
 }
 .person_block_last {
+    display: inline-block;
     margin-bottom: 25px;
     clear: left;
-    height: 230px;
+    height: 100%;
 }
 .person_photo {
     float: left;
@@ -341,6 +343,28 @@ footer .widget_bvg-block{
 }
 .person_block ul, .person_block_last ul, ul.no_bullet {
     list-style: none;
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+.entry-content ul li, .entry-content ol li {
+    margin-left: 0;
+}
+@media (min-width:801px)  {
+    .person_block, .person_block_last {
+        display: block;
+        height: 230px;
+    }
+    .person_block ul, .person_block_last ul, ul.no_bullet {
+        float: initial;
+    }
+    .person_block ul li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .entry-content ul li, .entry-content ol li {
+        margin-left: 1.5em;
+    }
 }
 .person_tel img {
     vertical-align: bottom;
@@ -576,6 +600,21 @@ div#tabs div.widget{
     margin-top: 0.2em;
     margin-bottom: 0.4em;
 }
+
+
+/* Palmares */
+table.table_palmares{
+    width: 100%;
+    margin-bottom: 32px;
+}
+table.table_palmares td.icons_column{
+    width: 32px;
+}
+table.table_palmares td.icons_column img{
+    height: 24px;
+    vertical-align: middle;
+}
+
 
 /* Temp ? */
 /*
