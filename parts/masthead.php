@@ -7,11 +7,15 @@
 
 	<div class="hgroup full-container <?php if ( is_active_sidebar( 'sidebar-masthead' ) ) echo 'masthead-sidebar' ?>">
         
-        <div id="teaser_button_header"><a href="<?php echo esc_url( home_url( '/' ) ); ?>#ar_anchor"><img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/themes/bvg/images/logo_ar_mini.png" /></a></div>
 		<?php if ( !is_active_sidebar( 'sidebar-masthead' ) ) : ?>
 
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="logo"><?php vantage_display_logo(); ?></a>
-			<?php if ( is_active_sidebar( 'sidebar-header' ) ) : ?>
+			
+            <div class="support-text">
+				<?php do_action( 'vantage_support_text' ); ?>
+			</div>
+            
+            <?php if ( is_active_sidebar( 'sidebar-header' ) ) : ?>
 
 				<div id="header-sidebar" <?php if ( siteorigin_setting( 'logo_no_widget_overlay' ) ) echo 'class="no-logo-overlay"' ?>>
 					<?php
@@ -22,13 +26,10 @@
 					?>
 				</div>
 
-			<?php else : ?>
-
-				<div class="support-text">
-					<?php do_action( 'vantage_support_text' ); ?>
-				</div>
 
 			<?php endif; ?>
+            
+            
 
 		<?php else : ?>
 
@@ -36,6 +37,7 @@
 				<div id="masthead-widgets" class="full-container">
 					<?php dynamic_sidebar( 'sidebar-masthead' ); ?>
 				</div>
+                
 			<?php endif; ?>
 
 		<?php endif; ?>

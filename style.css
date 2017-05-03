@@ -32,6 +32,9 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
 #masthead .hgroup .support-text {
     padding: 8px !important;
     box-shadow: 4px 4px 4px #343538 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    position: relative !important;
 
     background: linear-gradient( to right , #fff, #ccc) !important;
 
@@ -46,7 +49,6 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
 }
 
 /* Main menu */
-
 body, .main-navigation{
     background: linear-gradient(to top, #0f4e93, #007cc2) !important;
 }
@@ -161,6 +163,11 @@ body, .main-navigation{
 }
 
 
+/* Pagination */
+.pagination span, .entry-content .pagination span, .pagination a, .entry-content .pagination a{
+    color: #248cc8 !important;
+}
+
 /*
 article.post, article.page{
     margin-bottom: 20px !important;
@@ -198,14 +205,13 @@ p {
 td.score{
     color: #0f4e93 !important;
 }
+/*
 ::-webkit-scrollbar {
     display: none;
 }
+*/
 .page-template-default #primary, #primary{
     /*width: auto !important;*/
-}
-#primary.fullwidth{
-    width: auto !important;
 }
 #main{
     background: url(images/fond_block1.png);
@@ -226,13 +232,31 @@ td.score{
     */
     margin-bottom: 24px;
 }
-.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_sow-post-carousel, .widget_vantage-social-media, .widget_rss {
+.widget_bvg-block, .widget_bvg-calendar, .widget_bvg-teamclt, .widget_category-posts, .widget_bvg-nuligateamcalendar, .widget_bvg-nuligateamtable, .widget_bvg-nuligaallteamscalendar, .widget_siteorigin-panels-postloop, .widget_sow-post-carousel, .widget_vantage-social-media, .widget_rss,
+body.page-template-website_blog-php article, footer .widget_bvg-block>div {
     background: rgba(0,0,0,0.4);
     border: 3px solid #007cc2 !important;
     border-radius: 16px !important;
     padding-right: 24px !important;
     padding-left: 24px !important;
     margin-bottom: 24px !important;
+}
+/* Exception: Page blog */
+body.page-template-website_blog-php article{
+    padding-top: 1em;
+}
+/* Exception: Footer widgets */
+#footer-widgets{
+    text-align: center;
+}
+footer .widget_bvg-block{
+    max-width: 400px !important;
+    margin: auto !important;
+    float: none !important;
+    display: inline-block !important;
+    
+    border: 0 !important;
+    background: transparent;
 }
 .widget_siteorigin-panels-postloop{
     padding-top: 10px !important;
@@ -315,7 +339,7 @@ td.score{
     float: left;
     margin-right: 36px;
 }
-.person_block ul, ul.no_bullet {
+.person_block ul, .person_block_last ul, ul.no_bullet {
     list-style: none;
 }
 .person_tel img {
@@ -553,19 +577,8 @@ div#tabs div.widget{
     margin-bottom: 0.4em;
 }
 
-/* Palmares */
-table.table_palmares{
-    width: 100%;
-    margin-bottom: 32px;
-}
-table.table_palmares td.icons_column{
-    width: 32px;
-}
-table.table_palmares td.icons_column img{
-    height: 24px;
-}
-
 /* Temp ? */
+/*
 #teaser_button_header{
     margin: auto;
     width: 450px;
@@ -593,6 +606,7 @@ table.table_palmares td.icons_column img{
     transform: rotate(-10deg);
     border-radius: 16px;
 }
+*/
 .bannerInBlock_homepage{
     float: right;
     margin-top: -216px;
@@ -616,4 +630,10 @@ table.table_palmares td.icons_column img{
 }
 .rss-date{
     font-size: 80%;
+}
+
+/* Body Scrollbar Stuff */
+html, body{
+    height: 100%;
+    overflow: hidden;
 }
