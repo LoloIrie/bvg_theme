@@ -29,6 +29,15 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
     padding-top: 8px;
     padding-bottom: 8px;
 }
+#header_social_media_icons h1, #header_social_media_icons h3 {
+    display: none;
+}
+#header_social_media_icons img{
+    margin-top: 6px;
+}
+#header_social_media_icons{
+    margin-bottom: 0 !important;
+}
 #masthead .hgroup .support-text {
     padding: 8px !important;
     box-shadow: 4px 4px 4px #343538 !important;
@@ -48,8 +57,11 @@ https://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme
     background: linear-gradient( to right , #000 , #fff) !important;
 }
 
+body{
+    background: #115d9e !important;
+}
 /* Main menu */
-body, .main-navigation{
+.main-navigation{
     background: linear-gradient(to top, #0f4e93, #007cc2) !important;
 }
 .main-navigation ul li{
@@ -214,7 +226,7 @@ td.score{
     /*width: auto !important;*/
 }
 #main{
-    background: url(images/fond_block1.png);
+    background: url(images/fond_block1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
