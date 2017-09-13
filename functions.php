@@ -53,11 +53,11 @@ function bvg_add_footer(){
                 $(".bvg_home_panel_1").mCustomScrollbar({
                     theme: "3d"
                 });
-                /*
+/*
                 $("body").mCustomScrollbar({
                     theme: "3d"
                 });
-                */
+*/
             });
         })(jQuery);
     </script>

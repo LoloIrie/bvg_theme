@@ -39,7 +39,7 @@ jQuery( document ).on( 'ready' , function(){
     // Resize main container for the background picture if required
     jQuery( document ).ready(function() {
         if( jQuery( '#main' ).width() > 800 && jQuery( '#main' ).height() < 1200 ){
-            jQuery( '#main' ).height( 1200 );
+            jQuery( '#main' ).css( 'min-height', '1200px' );
         }
     });
 });
