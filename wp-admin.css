@@ -117,5 +117,10 @@ input[type="radio"]{
     border: 2px solid #c00 !important;
 }
 
-
-
+/* Customized buttons */
+#mceu_14 button i{
+    background-image: url('images/score_team.png') !important;
+}
+#mceu_15 button i{
+    background-image: url('images/score_match.png') !important;
+}
